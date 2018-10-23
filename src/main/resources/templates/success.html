@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+<title>Equipment Inventory Management</title>
+</head>
+<body>
+<div align="center">
+<h1>Welcome to </h1><a href="/"><h1>Equipment Inventory Management</h1></a>
+
+
+<div th:each="res : ${resp}" align="center">
+<div th:text="${res.id}"></div><b>Equipment Number Successfully added</b>
+
+</div>
+</div>
+</body>
+</html>

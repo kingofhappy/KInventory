@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" ></meta>
+<title>Equipment Inventory Management</title>
+<body>
+<div align="center">
+<h1>Welcome to </h1><a href="/"><h1>Equipment Inventory Management</h1></a>
+
+<h1>Equipment Details</h1></div>
+<div style="height:100%" align="center">
+
+<table border="1px" padding="1px">
+
+	 <tr>
+			<th>Equipment Number</th>
+			<th>Address</th>
+			<th>Contract Start Date</th>
+			<th>Contract End Date</th>
+			<th>Status</th>
+		</tr>
+	
+		<tr th:each="res : ${resp}">
+			<td th:text="${res.id}" ></td>
+			<td th:text="${res.addr}"></td>		
+			<td th:text="${res.con_strt_d}"></td>
+			<td th:text="${res.con_end_d}"></td>	
+			<td th:text="${res.stat}"></td>
+		</tr> 
+		
+		
+		</table> 
+
+
+</div>
+
+</body>
+
+</html>

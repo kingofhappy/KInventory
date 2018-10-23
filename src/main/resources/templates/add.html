@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Equipment Inventory Management</title>
+</head>
+<body>
+
+<center>
+<h1>Welcome to </h1><a href="/"><h1>Equipment Inventory Management</h1></a>
+</center>
+
+<form th:action="@{/addequip}" th:object="${ewForm}" method="POST">
+  <div class="container">
+  <center>
+    <h1>Add new Equipment</h1>
+    <p>Please fill in this form to add an Equipment to Inventory.</p>
+    </center>
+    <table align="center">
+	<tr>
+    <td><label for="equip"><b>Equipment Number</b></label></td>
+    <td><input type="text" placeholder="Enter Equipment number" th:field="*{id}" th:required="required" /></td>
+	</tr><tr>
+    <td><label for="address"><b>Address</b></label></td>
+    <td><input type="text" placeholder="Enter Address" th:field="*{addr}" th:required="required" /></td>
+	</tr>
+	<tr>
+    <td><label for="startdate"><b>Contract Start Date</b></label></td>
+    <td><input type="text" placeholder="(DDMMYYYY)" th:field="*{con_strt_d}" th:required="required" /></td>
+    </tr>
+    <tr>
+    <td><label for="enddate"><b>Contract End Date</b></label></td>
+    <td><input type="text" placeholder="(DDMMYYYY)" th:field="*{con_end_d}" th:required="required" /></td>
+    </tr>
+    <tr>
+    <td><label for="status"><b>Status</b></label></td>
+    <td>
+    <select th:field="*{stat}">
+  		<option value="Running">Running</option>
+  		<option value="Stopped">Stopped</option>
+  	</select>
+	</td></tr>
+	<tr>
+	
+    
+      
+    <td>  <button type="submit">Add</button></td>
+    
+  
+    </tr>
+    </table>
+    
+  </div>
+</form>
+	
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+<title>Equipment Inventory Management</title>
+</head>
+<body>
+
+<center>
+<h1>Welcome to </h1><a href="/"><h1>Equipment Inventory Management</h1></a>
+</center>
+
+<a href="/allequip">Equipment List</a>
+<a href="/add">Add Equipment</a>
+<a href="/equipid">Track Equipment</a>
+
+<div align="center">
+<form th:action="@{equipid}" id="equip"  method="post">
+  
+<label for="id"><b>Equipment Number</b></label>
+    <input type="text" placeholder="Enter Equipment number" name="id" th:required="required" />
+	
+
+    <div class="clearfix">
+      
+      <button type="submit">Search</button>
+</div>
+</form>
+
+</div>
+</body>
+</html>
