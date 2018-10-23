@@ -1,0 +1,10 @@
+com\kone\bluemix\ModelWrapper\EquipmentAllDocsWrapper.class
+com\kone\bluemix\Controller\EquipmentController.class
+com\kone\bluemix\ServiceImpl\EquipmentServiceImpl.class
+com\kone\bluemix\KoInventoryApplication.class
+com\kone\bluemix\ModelWrapper\EquipmentWrapper.class
+com\kone\bluemix\ModelWrapper\ValuesWrapper.class
+com\kone\bluemix\Service\EquipmentService.class
+com\kone\bluemix\ModelWrapper\RowWrapper.class
+com\kone\bluemix\ModelWrapper\ResponseWrapper.class
+com\kone\bluemix\Utils\EIConstant.class
