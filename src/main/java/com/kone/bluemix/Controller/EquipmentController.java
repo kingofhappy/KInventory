@@ -62,6 +62,11 @@ public class EquipmentController {
 	/**
 	   This is control will helps to retrieve equipment details by equipment id from cloudant DB
 	*/
+	/**
+	 * @param eid
+	 * @param model
+	 * @return
+	 */
 	@PostMapping(value = "equipid")
 	public String trackEquipment(@RequestParam("id") String eid, Model model) {
 
@@ -74,6 +79,10 @@ public class EquipmentController {
 	/**
 	   This is control will helps to retrieve equipment details by equipment id from cloudant DB
 	*/
+	/**
+	 * @param model
+	 * @return
+	 */
 	@GetMapping(value = "equipid")
 	public String trackEquipmentbyIDisplay(Model model) {
 		return "equipid";
@@ -82,12 +91,28 @@ public class EquipmentController {
 	/**
 	   This is control will helps to add new equipment into cloudant DB
 	*/
+	/**
+	 * @param ewForm
+	 * @param model
+	 * @return
+	 */
 	@PostMapping(value = "addequip")
 	public String addEquipment(@ModelAttribute("ewForm") EquipmentWrapper ewForm, Model model) {
-
+		
+		EquipmentWrapper res = es.trackEquipment(ewForm.getId());
+		if(res.getId().equals(null)) {
 		ResponseWrapper resp = es.addEquipment(ewForm);
 		model.addAttribute("resp", resp);
+		model.addAttribute("msg", "Equipment Added Successfully");
+		}
+		else {
+			model.addAttribute("resp", res);
+			model.addAttribute("msg", "Equipment already exit. Please add new equipmenmt");	
+			
+		}
+		
 		return "success";
+		
 
 	}
 
