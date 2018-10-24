@@ -17,7 +17,7 @@ Use Case 1(fetch X Equipment)
 	Request URL: https://kinv.eu-gb.mybluemix.net/allequip
 	Response: [{EquipmentNumber, Address, Contract Start Date, Contract End Date, Status}]
 
- 
+ ![alt text](https://raw.githubusercontent.com/kingofhappy/KInventory/master/images/to/img1.png)
 Use Case 2(Searching Equipment by EquipmentID)
 
 	It will help to search particular equipment status and where it is running those information we can get through rest api calls and displayed in html page as tabular format 
