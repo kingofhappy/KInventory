@@ -17,7 +17,8 @@ Use Case 1(fetch X Equipment)
 	Request URL: https://kinv.eu-gb.mybluemix.net/allequip
 	Response: [{EquipmentNumber, Address, Contract Start Date, Contract End Date, Status}]
 
- ![alt text](https://raw.githubusercontent.com/kingofhappy/KInventory/master/images/to/img1.png)
+![img1](https://user-images.githubusercontent.com/17136989/47404695-f06dcb80-d76b-11e8-8d1c-7a32276eecae.png)
+
 Use Case 2(Searching Equipment by EquipmentID)
 
 	It will help to search particular equipment status and where it is running those information we can get through rest api calls and displayed in html page as tabular format 
@@ -25,12 +26,9 @@ Use Case 2(Searching Equipment by EquipmentID)
 	Request Parameter: equipmentNumber
 	Response: {EquipmentNumber, Address, Contract Start Date, Contract End Date, Status}
 
- 
+![img2](https://user-images.githubusercontent.com/17136989/47404696-f06dcb80-d76b-11e8-9ddd-aafa17fb2311.png)
 
-
- 
-
-
+![img3](https://user-images.githubusercontent.com/17136989/47404697-f1066200-d76b-11e8-99b0-dd9adfe2742f.png)
 
 Use Case 3(Adding new equipment to Inventory)
 	
@@ -39,6 +37,8 @@ Use Case 3(Adding new equipment to Inventory)
 	Request Body: {EquipmentNumber, Address, Contract Start Date, Contract End Date, Status}
 	Response Body: {EquipmentNumber, rev, ok}
 	
- 
+![img4](https://user-images.githubusercontent.com/17136989/47404698-f19ef880-d76b-11e8-97b0-5994a9a2952d.png)
+![img5](https://user-images.githubusercontent.com/17136989/47404692-efd53500-d76b-11e8-9a05-1c380f7be348.png)
+![img6](https://user-images.githubusercontent.com/17136989/47404694-efd53500-d76b-11e8-980c-06a512dd19b1.PNG)
 
  
