@@ -15,7 +15,16 @@ public class EIConstant {
 	public static final String DBNAME = "/equipmentinventory";
 	public static final String BASE_URL="https://a1eaf64c-30d9-40d5-8867-73a4916f6695-bluemix.cloudant.com";
 	public static final String DOC = "/_all_docs";
+	public static final String DOC_CHECK="?key=";
+	public static final char QUOTE='"';
 	
+	public static final String JSON_PARSE_ERROR ="Error in parsing request json" ;
+	public static final String INTERNAL_SERVER_ERROR ="Internal Server Error" ;
+	public static final String SERVER_EXCEPTION = "Internal Server Error";
+	public static final String CLOUDNAT_ERROR="Error in connecting to Cloudant DB";
+
+	public static final String CLOUDANT_ACCESSTOKEN_ERROR = "Cloudant DB access token is expired.Please try after some time";
+
 
 }
 
