@@ -32,7 +32,7 @@ public class KoInventoryApplication {
 	  public RequestConfig requestConfig() {
 	    RequestConfig result = RequestConfig.custom()
 	      .setConnectionRequestTimeout(1200000)
-	      .setConnectTimeout(6000)
+	      .setConnectTimeout(26000)
 	      .setSocketTimeout(6000)
 	      .build();
 	    return result;
