@@ -45,6 +45,8 @@ public class EquipmentServiceImpl implements EquipmentService{
 	ObjectMapper mapper= new ObjectMapper();
 
 	
+	
+	
 	/* (non-Javadoc)
 	 * @see com.kone.bluemix.Service.EquipmentService#allEquipments()
 	 */
@@ -52,13 +54,11 @@ public class EquipmentServiceImpl implements EquipmentService{
 	public List<EquipmentWrapper> allEquipments()  {
 		// TODO Auto-generated method stub
 		
-		
 		String srcURL=EIConstant.CON_URL+EIConstant.DBNAME+EIConstant.DOC;
-		log.info("ConnectionURL : " + srcURL);
-		ResponseEntity<EquipmentAllDocsWrapper> resp=rt.getForEntity(srcURL, EquipmentAllDocsWrapper.class);
-		List<RowWrapper> ob=new ArrayList<>(Arrays.asList(resp.getBody().getRows()));
+		
+		List<RowWrapper> ob=new ArrayList<>(Arrays.asList(allDocs(srcURL).getBody().getRows()));
 		List<EquipmentWrapper> li=new ArrayList<>();
-		if(resp.getStatusCodeValue()==200) {
+		if(allDocs(srcURL).getStatusCodeValue()==200) {
 		
 			HttpHeaders headers = new HttpHeaders();
 			HttpEntity<Object> res=new HttpEntity<>(headers);
@@ -79,6 +79,17 @@ public class EquipmentServiceImpl implements EquipmentService{
 		return li;
 		
 	}
+	
+	/**
+	 * @return
+	 */
+	@Override
+	public ResponseEntity<EquipmentAllDocsWrapper> allDocs(String srcURL) {
+			
+		log.info("ConnectionURL : " + srcURL);
+		ResponseEntity<EquipmentAllDocsWrapper> resp=rt.getForEntity(srcURL, EquipmentAllDocsWrapper.class);
+		return resp;
+	}
 
 	/* (non-Javadoc)
 	 * @see com.kone.bluemix.Service.EquipmentService#trackEquipment(java.lang.String)
@@ -87,8 +98,8 @@ public class EquipmentServiceImpl implements EquipmentService{
 	public EquipmentWrapper trackEquipment(String eid) {
 		// TODO Auto-generated method stub
 		String sURL=EIConstant.CON_URL+EIConstant.DBNAME+"/"+eid;
-		
 		ResponseEntity<EquipmentWrapper> res=rt.getForEntity(sURL, EquipmentWrapper.class);
+		
 		return res.getBody();
 	}
 
