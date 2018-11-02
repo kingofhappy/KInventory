@@ -1,7 +1,10 @@
 com\kone\bluemix\ModelWrapper\EquipmentAllDocsWrapper.class
 com\kone\bluemix\Controller\EquipmentController.class
 com\kone\bluemix\ServiceImpl\EquipmentServiceImpl.class
+com\kone\bluemix\ExceptionHandling\ErrorCustomResponse.class
+com\kone\bluemix\ExceptionHandling\EquipmentNotFoundException.class
 com\kone\bluemix\KoInventoryApplication.class
+com\kone\bluemix\ExceptionHandling\EquipmentExceptionController.class
 com\kone\bluemix\ModelWrapper\EquipmentWrapper.class
 com\kone\bluemix\ModelWrapper\ValuesWrapper.class
 com\kone\bluemix\Service\EquipmentService.class

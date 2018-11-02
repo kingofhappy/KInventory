@@ -1,10 +1,13 @@
+C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ExceptionHandling\EquipmentExceptionController.java
+C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ModelWrapper\ResponseWrapper.java
+C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\Controller\EquipmentController.java
+C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ExceptionHandling\ErrorCustomResponse.java
 C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\Utils\EIConstant.java
 C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\KoInventoryApplication.java
 C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ModelWrapper\EquipmentWrapper.java
 C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ModelWrapper\EquipmentAllDocsWrapper.java
 C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ServiceImpl\EquipmentServiceImpl.java
-C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ModelWrapper\ResponseWrapper.java
+C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ExceptionHandling\EquipmentNotFoundException.java
 C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ModelWrapper\ValuesWrapper.java
-C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\Controller\EquipmentController.java
 C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\ModelWrapper\RowWrapper.java
 C:\DevEnv\DemoEnv\KOInventory\src\main\java\com\kone\bluemix\Service\EquipmentService.java

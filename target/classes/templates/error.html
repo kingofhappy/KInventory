@@ -3,7 +3,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
-<title>Equipment Inventory Management</title>
+<title>Error Page</title>
 </head>
 <body>
 <div align="center">
@@ -11,10 +11,11 @@
 
 
 <div th:each="res : ${resp}" align="center">
-<div th:text="${res.id}"></div>
+<div th:text="${res.detail}"></div>
+<div th:text="${res.message}"></div>
 
 </div>
-<div th:text="${msg}"></div>
+
 </div>
 </body>
 </html>
